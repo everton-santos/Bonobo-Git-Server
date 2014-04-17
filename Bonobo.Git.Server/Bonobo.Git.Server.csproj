@@ -184,6 +184,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\Resources.pt-BR.designer.cs">
+      <DependentUpon>Resources.pt-BR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App_GlobalResources\Resources.fr-FR.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -436,6 +441,11 @@
     <Content Include="App_Data\Git\xargs.exe" />
     <Content Include="App_Data\note.txt" />
     <Content Include="App_Data\Repositories\note.txt" />
+    <EmbeddedResource Include="App_GlobalResources\Resources.pt-BR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.pt-BR.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="App_GlobalResources\Resources.fr-FR.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resources.fr-FR.designer.cs</LastGenOutput>
